@@ -25,4 +25,4 @@ def register(request):
                 raise forms.ValidationError('Looks like a username with that email or password already exists')
     else:
         form = UserRegistrationForm()
-    return render(request, 'registration/login.html', {'form' : form})
+    return render(request, 'registration/registration.html', {'form' : form})
